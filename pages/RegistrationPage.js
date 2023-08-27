@@ -11,7 +11,7 @@ const RegistrationPage = () => {
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('')
     const [dateOfBirth, setDateOfBirth] = useState(new Date())
-    const [show,setShow] = useState(false)
+
     const onChange = (e, selectedDate) => {setDateOfBirth(selectedDate);
     setShow(false)}
 

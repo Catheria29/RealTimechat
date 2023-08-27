@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
         borderStyle: "solid",
         borderColor: "blue",
         borderBottomWidth: 1,
-        marginVertical: 15
+        marginVertical: 16
     },
     register_button: {
         backgroundColor : 'blue',
