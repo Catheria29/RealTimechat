@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Alert, Image, Pressable, Text, TextInput, TouchableOpacity, View} from "react-native";
+import {Alert, Pressable, Text, TextInput, TouchableOpacity, View} from "react-native";
 import  {login_page_styles,register_styles} from "../GlobalStyle";
 import { MaterialIcons } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
@@ -37,14 +37,9 @@ const LoginPage = ({navigation}) => {
                 Alert.alert(e.message)
             }
         }
-    const userImage = 'https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=100&q=60'
     return (
         <View style={register_styles.container}>
           <View>
-              <Image
-                  source={{uri:userImage}}
-                  style={{width: 70, height:70, borderRadius:40}}
-              />
               <Text style={register_styles.welcome_text}>Log to your account </Text>
           </View>
             <View style={register_styles.view_displaying_inputs_containers}>

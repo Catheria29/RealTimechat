@@ -1,12 +1,12 @@
 import React from 'react';
 import {Image, Text, TouchableOpacity, View} from "react-native";
 import {contact_chat_columns_styles} from "../GlobalStyle";
-import dayjs from "dayjs";
 
-const ContactChatColumn = ({userImage,userName, conversationContent,isRead,key}) => {
+
+const ContactChatColumn = ({userImage,userName, conversationContent,isRead,date}) => {
 
     return (
-        <TouchableOpacity key = {key} activeOpacity={0.3} style={contact_chat_columns_styles.container}>
+        <TouchableOpacity  activeOpacity={0.3} style={contact_chat_columns_styles.container}>
             <Image
                 source={{uri:userImage}}
                 style={contact_chat_columns_styles.image_style}
@@ -16,7 +16,7 @@ const ContactChatColumn = ({userImage,userName, conversationContent,isRead,key})
                 <Text style={{color: isRead ? 'gray' : 'black'}} numberOfLines={1} > {conversationContent} </Text>
             </View>
             <Text numberOfLines={1} style={{ textAlignVertical: 'top', color:'lightgray'}}>
-                {dayjs().format('hh : mm  A')}
+                {date}
             </Text>
         </TouchableOpacity>
     );
