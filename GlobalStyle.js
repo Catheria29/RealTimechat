@@ -112,7 +112,7 @@ const contact_chat_columns_styles ={
     container:{
         display:'flex',
         flexDirection:'row',
-        padding:15,
+        padding:10,
          borderBottomWidth:0.5,
         borderColor:'lightgray'
     },
