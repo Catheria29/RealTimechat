@@ -26,7 +26,6 @@ const register_styles = {
         borderColor: "blue",
         borderBottomWidth: 1,
         marginVertical: 16,
-        outlineStyle:'none'
     },
     date_picker_input:{
        display:'flex',
@@ -35,7 +34,6 @@ const register_styles = {
         borderColor: "blue",
         borderBottomWidth: 1,
         marginVertical: 16,
-        outlineStyle:'none'
     },
     register_button: {
         backgroundColor : 'blue',
