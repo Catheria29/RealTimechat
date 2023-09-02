@@ -14,14 +14,14 @@ const actions = [
         text: "New Chat",
         icon: <MaterialCommunityIcons name="chat-plus" size={24} color="white" />,
         name: "bt_new_chat",
-        position: 2,
+        position: 1,
         color:'lightblue'
     },
     {
         text: "New group",
         icon: <MaterialIcons name="group-add" size={28} color="white" />,
         name: "bt_new_group",
-        position: 1,
+        position: 2,
         color:'lightblue'
     },
 ]
@@ -47,6 +47,7 @@ const HomePage = ({navigation}) => {
             <FlatList data={usersDataList} renderItem={(({item}) => <ContactChatColumn date={item.date} userName={item.userName} conversationContent={item.conversationContent} userImage={item.userImage} isRead={item.isRead}/>)}/>
             <FloatingAction
                 color='lightblue'
+                animated={false}
                 actions={actions}
                 onPressItem={name => {
                     console.log(`selected button: ${name}`);
