@@ -15,7 +15,7 @@ const actions = [
         icon: <MaterialCommunityIcons name="chat-plus" size={24} color="white" />,
         name: "bt_new_chat",
         position: 1,
-        color:'lightblue'
+        color:'lightblue',
     },
     {
         text: "New group",
@@ -51,7 +51,8 @@ const HomePage = ({navigation}) => {
                 actions={actions}
                 onPressItem={name => {
                     console.log(`selected button: ${name}`);
-
+                    if(name === 'bt_new_chat'){navigation.navigate('Contacts list for new chat')}
+                    else {navigation.navigate('Contacts list for new group') }
                 }}
             />
         </SafeAreaView>
