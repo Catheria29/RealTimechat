@@ -49,5 +49,3 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 ## Acknowledgments
 - Thanks to the creators of React Native and Expo for providing a powerful platform for mobile application development.
 
----
-Feel free to reach out if you have any questions or feedback!
